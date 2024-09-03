@@ -1,4 +1,10 @@
-import { HeroSection, Navigation, Gallery, Footer } from './components';
+import {
+	HeroSection,
+	Navigation,
+	Gallery,
+	Information,
+	Footer,
+} from './components';
 
 const App = () => {
 	return (
@@ -9,6 +15,7 @@ const App = () => {
 				<Gallery />
 			</main>
 
+			<Information />
 			<Footer />
 		</>
 	);
