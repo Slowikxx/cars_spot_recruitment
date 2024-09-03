@@ -8,7 +8,7 @@ const Navigation = () => {
 	const [menuOpened, setMenuOpened] = useState<boolean>(false);
 
 	return (
-		<nav className="max-w-full mx-4 flex justify-between items-center sm:px-16 px-6 py-4 bg-transparent">
+		<nav className="max-w-full mx-4 flex justify-between items-center py-4 bg-transparent">
 			<div className="flex flex-row items-center gap-2 cursor-pointer">
 				<HiOutlineLightningBolt className="sm:text-4xl text-3xl text-dark-blue" />
 				<h1 className="sm:text-3xl text-2xl font-robotoCondensed font-bold text-black">

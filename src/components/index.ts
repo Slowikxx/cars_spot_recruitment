@@ -1,4 +1,5 @@
 import Navigation from './Navigation';
 import CustomButton from './CustomButton';
+import HeroSection from './HeroSection';
 
-export { Navigation, CustomButton };
+export { Navigation, CustomButton, HeroSection };
