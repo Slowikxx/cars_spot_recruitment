@@ -3,6 +3,10 @@ const Footer = () => {
 		<footer className="bg-gray-200 flex flex-row justify-between w-full h-16 items-center sm:px-24 px-6 ">
 			<a
 				href="#"
+				onClick={(e) => {
+					e.preventDefault();
+					window.scrollTo({ top: 0, behavior: 'smooth' });
+				}}
 				className="font-robotoCondensed font-bold text-base text-center text-white cursor-pointer"
 			>
 				Cars Spot

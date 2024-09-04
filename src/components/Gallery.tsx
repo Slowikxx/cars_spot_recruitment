@@ -3,7 +3,7 @@ import { useState } from 'react';
 const Gallery = () => {
 	const [carFilter, setCarFilter] = useState<string>('passenger');
 	return (
-		<div className="h-[100vh]">
+		<div id="gallery" className="h-[100vh]">
 			<div>
 				<p className="text-dark-blue font-normal font-robotoCondensed text-[21.5px] leading-[32.25px]">
 					Prezentacja firmy

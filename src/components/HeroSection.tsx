@@ -1,5 +1,5 @@
 import CustomButton from './CustomButton';
-import cars from '../assets/Removal-575.png';
+import { hero, shadow } from '../assets';
 
 const HeroSection = () => {
 	return (
@@ -25,9 +25,15 @@ const HeroSection = () => {
 			</div>
 
 			<div>
+				{/* <img src={heroBackground} alt="strokes-hero-background" /> */}
 				<img
-					src={cars}
+					src={hero}
 					alt="three-cars-hero-img"
+					className="absolute right-0 w-[1200px] lg:-bottom-20 bottom-16 -z-10"
+				/>
+				<img
+					src={shadow}
+					alt="cars-shadow"
 					className="absolute right-0 w-[1200px] lg:-bottom-20 bottom-16 -z-10"
 				/>
 			</div>
