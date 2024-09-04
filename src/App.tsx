@@ -9,7 +9,7 @@ import {
 const App = () => {
 	return (
 		<>
-			<main className="sm:px-24 px-6 h-full w-full">
+			<main className="sm:px-24 px-6 h-full w-full overflow-x-hidden">
 				<Navigation />
 				<HeroSection />
 				<Gallery />
