@@ -25,7 +25,7 @@ const Navigation = () => {
 			</div>
 			<CustomButton
 				btnText="Zadzwoń do nas"
-				additionalStyles="w-40 h-12 bg-dark-blue text-white-100 md:flex hidden"
+				additionalStyles="w-40 h-12 bg-dark-blue text-white-100 md:flex hidden hover:opacity-80"
 			/>
 
 			<div className="sm:hidden flex items-center cursor-pointer">
@@ -43,7 +43,7 @@ const Navigation = () => {
 			</div>
 
 			{menuOpened && (
-				<div className="sm:hidden flex absolute top-20 right-0 mx-4 my-2 min-w-28 border-l-2 border-dark-blue max-h-full px-6 flex-col z-10">
+				<div className="sm:hidden flex absolute top-20 right-0 mx-4 my-2 min-w-28 border-l-2 border-dark-blue max-h-full px-6 flex-col z-10 bg-white h-full">
 					<ul className="list-none flex flex-col flex-1 gap-4">
 						<li className="font-robotoFlex font-normal leading-6 text-gray-200 cursor-pointer">
 							Galeria zdjęć
@@ -54,7 +54,7 @@ const Navigation = () => {
 					</ul>
 					<CustomButton
 						btnText="Zadzwoń do nas"
-						additionalStyles="w-40 h-12 bg-dark-blue text-white-100 mt-24"
+						additionalStyles="w-40 h-12 bg-dark-blue text-white-100 hover:opacity-80"
 					/>
 				</div>
 			)}

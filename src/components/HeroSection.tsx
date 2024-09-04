@@ -15,11 +15,11 @@ const HeroSection = () => {
 				<div className="flex flex-row gap-8">
 					<CustomButton
 						btnText="Zobacz zdjęcia"
-						additionalStyles="w-36 h-12 bg-dark-blue text-white-100"
+						additionalStyles="w-36 h-12 bg-dark-blue text-white-100 hover:opacity-80"
 					/>
 					<CustomButton
 						btnText="Zadzwoń do nas"
-						additionalStyles="w-36 h-12 border-dark-blue border-2 text-dark-blue"
+						additionalStyles="w-36 h-12 border-dark-blue border-2 text-dark-blue hover:bg-dark-blue hover:text-white-100"
 					/>
 				</div>
 			</div>
@@ -28,7 +28,7 @@ const HeroSection = () => {
 				<img
 					src={cars}
 					alt="three-cars-hero-img"
-					className="absolute right-0 w-[1200px] lg:-bottom-20 bottom-16"
+					className="absolute right-0 w-[1200px] lg:-bottom-20 bottom-16 -z-10"
 				/>
 			</div>
 		</div>
