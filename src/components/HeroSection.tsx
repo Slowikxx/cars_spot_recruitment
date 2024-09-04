@@ -1,5 +1,5 @@
 import CustomButton from './CustomButton';
-import { hero, shadow } from '../assets';
+import { hero, shadow, heroBackground } from '../assets';
 
 const HeroSection = () => {
 	return (
@@ -25,7 +25,11 @@ const HeroSection = () => {
 			</div>
 
 			<div>
-				{/* <img src={heroBackground} alt="strokes-hero-background" /> */}
+				<img
+					src={heroBackground}
+					alt="strokes-hero-background"
+					className="lg:block hidden absolute right-40 top-0 -z-10"
+				/>
 				<img
 					src={hero}
 					alt="three-cars-hero-img"

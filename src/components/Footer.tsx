@@ -1,6 +1,6 @@
 const Footer = () => {
 	return (
-		<footer className="bg-gray-200 flex flex-row justify-between w-full h-16 items-center sm:px-24 px-6 ">
+		<footer className="bg-gray-200 flex flex-row justify-between w-full h-16 items-center sm:px-24 px-6 border-t border-white">
 			<a
 				href="#"
 				onClick={(e) => {

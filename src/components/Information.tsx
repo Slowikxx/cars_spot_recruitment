@@ -8,39 +8,43 @@ const Information = () => {
 		>
 			<div className="flex flex-col md:max-w-[580px] max-w-[500px] gap-4">
 				<h1 className="font-bebasNeue font-normal text-2xl text-white">
-					ID NOSTRUD ENIM ESSE CONSECTETUR IN EU MOLLIT FUGIAT AUTE. VELIT NULLA
-					COMMODO.
+					Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla
+					commodo.
 				</h1>
 
 				<p className="font-robotoCondensed text-normal text-sm text-white">
-					Mauris varius ipsum mauris, retrum lobortis magna efficitur a. Donec
+					Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec
 					egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac
 					venenatis eros ipsum ac arcu. Vestibulum et [...]
 				</p>
 
-				<button className="flex flex-row items-center gap-2 border-b-2 border-white w-14 pb-2">
-					<p className="font-robotoCondensed text-normal text-sm text-white">
-						Rozwiń
-					</p>
-					<FaArrowDown className="text-sm text-white" />
+				<button className="relative border-b-2 border-white w-14 pb-2 transform transition-transform duration-300 hover:translate-y-[6px]">
+					<div className="flex flex-row items-center gap-2 transform transition-transform duration-300 hover:translate-y-[-8px] hover:scale-110">
+						<p className="font-robotoCondensed text-normal text-sm text-white">
+							Rozwiń
+						</p>
+						<FaArrowDown className="text-sm text-white" />
+					</div>
 				</button>
 			</div>
 			<div className="flex flex-col md:max-w-[580px] max-w-[500px] gap-4">
 				<h1 className="font-bebasNeue font-normal text-2xl text-white">
-					ID NOSTRUD ENIM ESSE CONSECTETUR IN EU MOLLIT FUGIAT AUTE. VELIT NULLA
-					COMMODO.
+					Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla
+					commodo.
 				</h1>
 
 				<p className="font-robotoCondensed text-normal text-sm text-white">
-					Mauris varius ipsum mauris, retrum lobortis magna efficitur a. Donec
+					Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec
 					egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac
 					venenatis eros ipsum ac arcu. Vestibulum et [...]
 				</p>
-				<button className="flex flex-row items-center gap-2 border-b-2 border-white w-14 pb-2">
-					<p className="font-robotoCondensed text-normal text-sm text-white">
-						Rozwiń
-					</p>
-					<FaArrowDown className="text-sm text-white" />
+				<button className="relative border-b-2 border-white w-14 pb-2 transform transition-transform duration-300 hover:translate-y-[6px]">
+					<div className="flex flex-row items-center gap-2 transform transition-transform duration-300 hover:translate-y-[-8px] hover:scale-110">
+						<p className="font-robotoCondensed text-normal text-sm text-white">
+							Rozwiń
+						</p>
+						<FaArrowDown className="text-sm text-white" />
+					</div>
 				</button>
 			</div>
 		</div>
