@@ -14,9 +14,11 @@ const Gallery = () => {
 		useState<Array<galleryImageType>>(passengerCars);
 
 	const onGalleryButtonClick = (galleryButtonIndex: number) => {
+		const isMobileScreen = window.innerWidth < 768;
 		setButtonOnIndex(galleryButtonIndex);
-		setImageOffset(-664 * galleryButtonIndex);
-		console.log(imageOffset);
+		setImageOffset(
+			isMobileScreen ? -468 * galleryButtonIndex : -664 * galleryButtonIndex
+		);
 	};
 
 	useEffect(() => {
@@ -29,7 +31,7 @@ const Gallery = () => {
 				<p className="text-dark-blue font-normal font-robotoCondensed text-[21.5px] leading-[32.25px]">
 					Prezentacja firmy
 				</p>
-				<h1 className="font-bebasNeue font-normal text-[40px] leading-[48px] text-gray-100">
+				<h1 className="font-bebasNeue font-normal text-[40px] leading-[48px] text-gray-100 mb-6">
 					ZOBACZ NASZĄ GALERIĘ ZDJĘĆ
 				</h1>
 				<div className="flex flex-row gap-5">
@@ -47,7 +49,7 @@ const Gallery = () => {
 						</p>
 					))}
 				</div>
-				<div className="mt-20 mb-12 ">
+				<div className="mt-20 mb-12">
 					<div
 						className="flex flex-row gap-16 transition-transform duration-300"
 						style={{ transform: `translateX(${imageOffset}px)` }}

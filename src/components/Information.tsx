@@ -4,15 +4,15 @@ const Information = () => {
 	return (
 		<div
 			id="faq"
-			className="flex w-full bg-gray-200 justify-between md:flex-row flex-col items-center md:px-24 px-6 md:py-16 py-10 gap-10"
+			className="flex w-full bg-gray-200 justify-between md:flex-row flex-col items-center md:px-24 px-6 md:py-[88px] py-16 gap-10"
 		>
-			<div className="flex flex-col md:max-w-[580px] max-w-[500px] gap-4">
-				<h1 className="font-bebasNeue font-normal text-2xl text-white">
+			<div className="flex flex-col md:max-w-[580px] max-w-[500px]">
+				<h1 className="font-bebasNeue font-normal text-2xl text-white mb-4">
 					Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla
 					commodo.
 				</h1>
 
-				<p className="font-robotoCondensed text-normal text-sm text-white">
+				<p className="font-robotoCondensed text-normal text-sm text-white mb-6">
 					Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec
 					egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac
 					venenatis eros ipsum ac arcu. Vestibulum et [...]
@@ -27,13 +27,13 @@ const Information = () => {
 					</div>
 				</button>
 			</div>
-			<div className="flex flex-col md:max-w-[580px] max-w-[500px] gap-4">
-				<h1 className="font-bebasNeue font-normal text-2xl text-white">
+			<div className="flex flex-col md:max-w-[580px] max-w-[500px]">
+				<h1 className="font-bebasNeue font-normal text-2xl text-white mb-4">
 					Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla
 					commodo.
 				</h1>
 
-				<p className="font-robotoCondensed text-normal text-sm text-white">
+				<p className="font-robotoCondensed text-normal text-sm text-white mb-6">
 					Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec
 					egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac
 					venenatis eros ipsum ac arcu. Vestibulum et [...]

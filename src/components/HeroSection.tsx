@@ -3,12 +3,12 @@ import { hero, shadow, heroBackground } from '../assets';
 
 const HeroSection = () => {
 	return (
-		<div className="flex flex-row justify-between px-4 h-[100vh] mt-16">
-			<div className="flex flex-col sm:gap-12 gap-8">
-				<h1 className="font-bebasNeue sm:text-[76.29px] text-4xl sm:leading-[83.92px] font-normal whitespace-pre-line">
+		<div className="flex flex-row justify-between px-4 h-screen mt-28">
+			<div className="flex flex-col">
+				<h1 className="font-bebasNeue sm:text-[76.29px] text-4xl sm:leading-[83.92px] font-normal whitespace-pre-line mb-8">
 					SPRZEDAJEMY SAMOCHODY{'\n'}Z EUROPY
 				</h1>
-				<p className="font-robotoCondensed font-normal text-base whitespace-pre-line">
+				<p className="font-robotoCondensed font-normal text-base whitespace-pre-line mb-12">
 					Kup komfortowy pojazd, aby każda podróż{'\n'}była wyjątkowym
 					przeżyciem.
 				</p>
@@ -33,12 +33,12 @@ const HeroSection = () => {
 				<img
 					src={hero}
 					alt="three-cars-hero-img"
-					className="absolute right-0 w-[1200px] lg:-bottom-20 bottom-16 -z-10"
+					className="absolute right-0 w-[1200px] lg:-bottom-32 bottom-12 -z-10"
 				/>
 				<img
 					src={shadow}
 					alt="cars-shadow"
-					className="absolute right-0 w-[1200px] lg:-bottom-20 bottom-16 -z-10"
+					className="absolute right-0 w-[1200px] lg:-bottom-32 bottom-12 -z-10"
 				/>
 			</div>
 		</div>

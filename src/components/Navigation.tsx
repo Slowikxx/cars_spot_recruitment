@@ -8,13 +8,8 @@ const Navigation = () => {
 	const [menuOpened, setMenuOpened] = useState<boolean>(false);
 
 	return (
-		<nav className="max-w-full mx-4 flex justify-between items-center py-4 bg-transparent">
+		<nav className="max-w-full px-4 flex justify-between items-center py-4 bg-transparent">
 			<div className="flex flex-row items-center gap-2 cursor-pointer">
-				{/* <HiOutlineLightningBolt className="sm:text-4xl text-3xl text-dark-blue" />
-				<h1 className="sm:text-3xl text-2xl font-robotoCondensed font-bold text-black">
-					<span className="text-dark-blue">Cars</span>Spot
-				</h1> */}
-
 				<img src={textLogo} alt="carsspot_logo" />
 			</div>
 			<div className="sm:flex hidden flex-row gap-4">
@@ -55,7 +50,7 @@ const Navigation = () => {
 					/>
 				) : (
 					<IoClose
-						className="text-3xl text-gray-200"
+						className="text-4xl text-dark-blue"
 						onClick={() => setMenuOpened(false)}
 					/>
 				)}
