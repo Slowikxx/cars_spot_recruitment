@@ -6,7 +6,7 @@ const Footer = () => {
 			variants={footerAnim}
 			initial="hidden"
 			whileInView="show"
-			className="bg-gray-200 flex flex-row justify-between w-full h-16 items-center sm:px-24 px-6 border-t border-white"
+			className="bg-gray-200 flex flex-row justify-between w-full h-16 items-center sm:px-24 px-6 border-t border-white overflow-x-hidden"
 		>
 			<a
 				href="#"

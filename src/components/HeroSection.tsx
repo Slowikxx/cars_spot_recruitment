@@ -5,7 +5,7 @@ import { fadeIn, slideIn } from '../utils/animation';
 
 const HeroSection = () => {
 	return (
-		<div className="flex flex-row justify-between px-4 h-screen mt-28">
+		<div className="flex flex-row justify-between px-4 h-screen mt-28 overflow-x-hidden">
 			<div className="flex flex-col">
 				<motion.h1
 					variants={slideIn('left', 'spring', 0.1)}

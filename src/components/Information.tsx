@@ -8,7 +8,7 @@ const InformationPiece = ({ direction }: { direction: string }) => {
 			variants={slideIn(direction, 'spring', 0.3)}
 			initial="hidden"
 			whileInView="show"
-			className="flex flex-col md:max-w-[580px] max-w-[500px]"
+			className="flex flex-col md:max-w-[580px] max-w-[500px] overflow-x-hidden"
 		>
 			<h1 className="font-bebasNeue font-normal text-2xl text-white mb-4">
 				Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla

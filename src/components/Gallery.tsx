@@ -28,7 +28,7 @@ const Gallery = () => {
 	}, [carFilter]);
 
 	return (
-		<div id="gallery">
+		<div id="gallery" className="overflow-x-hiddden">
 			<div>
 				<motion.div
 					variants={slideIn('top', 'spring', 0.15)}

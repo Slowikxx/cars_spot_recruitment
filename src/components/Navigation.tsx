@@ -14,7 +14,7 @@ const Navigation = () => {
 			variants={navAnim}
 			initial="hidden"
 			whileInView="show"
-			className="max-w-full px-4 flex justify-between items-center py-4 bg-transparent"
+			className="max-w-full px-4 flex justify-between items-center py-4 bg-transparent overflow-x-hidden"
 		>
 			<div className="flex flex-row items-center gap-2 cursor-pointer">
 				<img src={textLogo} alt="carsspot_logo" />
