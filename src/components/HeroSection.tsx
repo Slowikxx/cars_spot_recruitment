@@ -28,17 +28,17 @@ const HeroSection = () => {
 				<img
 					src={heroBackground}
 					alt="strokes-hero-background"
-					className="lg:block hidden absolute right-40 top-0 -z-10"
+					className="xl:block hidden absolute right-40 top-0 -z-10"
 				/>
 				<img
 					src={hero}
 					alt="three-cars-hero-img"
-					className="absolute right-0 w-[1200px] lg:-bottom-32 bottom-12 -z-10"
+					className="absolute right-0 w-[1200px] md:-bottom-32 xl:block sm:hidden bottom-12 -z-10"
 				/>
 				<img
 					src={shadow}
 					alt="cars-shadow"
-					className="absolute right-0 w-[1200px] lg:-bottom-32 bottom-12 -z-10"
+					className="absolute right-0 w-[1200px] md:-bottom-32 xl:block sm:hidden bottom-12 -z-10"
 				/>
 			</div>
 		</div>
