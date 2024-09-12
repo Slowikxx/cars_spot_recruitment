@@ -5,6 +5,8 @@ import {
 	passengerCars,
 	deliveryCars,
 } from '../constants';
+import { motion } from 'framer-motion';
+import { slideIn } from '../utils/animation';
 
 const Gallery = () => {
 	const [carFilter, setCarFilter] = useState<string>('passenger');
@@ -28,13 +30,24 @@ const Gallery = () => {
 	return (
 		<div id="gallery">
 			<div>
-				<p className="text-dark-blue font-normal font-robotoCondensed text-[21.5px] leading-[32.25px]">
-					Prezentacja firmy
-				</p>
-				<h1 className="font-bebasNeue font-normal text-[40px] leading-[48px] text-gray-100 mb-6">
-					ZOBACZ NASZĄ GALERIĘ ZDJĘĆ
-				</h1>
-				<div className="flex flex-row gap-5">
+				<motion.div
+					variants={slideIn('top', 'spring', 0.15)}
+					initial="hidden"
+					whileInView="show"
+				>
+					<p className="text-dark-blue font-normal font-robotoCondensed text-[21.5px] leading-[32.25px]">
+						Prezentacja firmy
+					</p>
+					<h1 className="font-bebasNeue font-normal text-[40px] leading-[48px] text-gray-100 mb-6">
+						ZOBACZ NASZĄ GALERIĘ ZDJĘĆ
+					</h1>
+				</motion.div>
+				<motion.div
+					variants={slideIn('bottom', 'spring', 0.15)}
+					initial="hidden"
+					whileInView="show"
+					className="flex flex-row gap-5"
+				>
 					{galleryTypes.map((galleryType, i) => (
 						<p
 							key={i}
@@ -48,14 +61,21 @@ const Gallery = () => {
 							Samochody {galleryType.name}
 						</p>
 					))}
-				</div>
+				</motion.div>
 				<div className="mt-20 mb-12">
 					<div
 						className="flex flex-row gap-16 transition-transform duration-300"
 						style={{ transform: `translateX(${imageOffset}px)` }}
 					>
 						{carImages.map((car, i) => (
-							<img
+							<motion.img
+								variants={
+									window.innerWidth < 768
+										? {}
+										: slideIn('left', 'spring', 0.2 * i)
+								}
+								initial="hidden"
+								whileInView="show"
 								key={i}
 								src={car.src}
 								alt={car.alt}

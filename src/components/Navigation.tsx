@@ -3,12 +3,19 @@ import { useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { IoClose } from 'react-icons/io5';
 import { textLogo } from '../assets';
+import { motion } from 'framer-motion';
+import { navAnim } from '../utils/animation';
 
 const Navigation = () => {
 	const [menuOpened, setMenuOpened] = useState<boolean>(false);
 
 	return (
-		<nav className="max-w-full px-4 flex justify-between items-center py-4 bg-transparent">
+		<motion.nav
+			variants={navAnim}
+			initial="hidden"
+			whileInView="show"
+			className="max-w-full px-4 flex justify-between items-center py-4 bg-transparent"
+		>
 			<div className="flex flex-row items-center gap-2 cursor-pointer">
 				<img src={textLogo} alt="carsspot_logo" />
 			</div>
@@ -98,7 +105,7 @@ const Navigation = () => {
 					</ul>
 				</div>
 			)}
-		</nav>
+		</motion.nav>
 	);
 };
 
