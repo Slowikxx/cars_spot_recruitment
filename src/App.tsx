@@ -8,8 +8,8 @@ import {
 
 const App = () => {
 	return (
-		<div className="overflow-x-hidden">
-			<main className="sm:px-24 px-6 h-full w-full">
+		<>
+			<main className="sm:px-24 px-6 h-full w-screen">
 				<Navigation />
 				<HeroSection />
 				<Gallery />
@@ -17,7 +17,7 @@ const App = () => {
 
 			<Information />
 			<Footer />
-		</div>
+		</>
 	);
 };
 
