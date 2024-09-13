@@ -31,7 +31,7 @@ const Gallery = () => {
 	}, [carFilter]);
 
 	return (
-		<div id="gallery" className="overflow-x-hidden">
+		<div id="gallery" className="overflow-hidden">
 			<motion.div
 				variants={slideIn('top', 'spring', 0.15)}
 				initial="hidden"
@@ -65,7 +65,7 @@ const Gallery = () => {
 					</p>
 				))}
 			</motion.div>
-			<div className="mt-20 mb-12 overflow-hidden">
+			<div className="mt-20 mb-12">
 				<div
 					className="flex flex-row sm:gap-16 gap-0 transition-transform duration-300"
 					style={{ transform: `translateX(${Math.min(imageOffset, 0)}px)` }}
@@ -98,7 +98,7 @@ const Gallery = () => {
 							buttonOnIndex === i
 								? 'bg-dark-blue'
 								: 'bg-[#ededed] hover:bg-dark-blue hover:opacity-40'
-						}  w-3 h-3 rounded-full cursor-pointer`}
+						}  sm:w-3 sm:h-3 w-6 h-6 rounded-full cursor-pointer`}
 					/>
 				))}
 			</div>
