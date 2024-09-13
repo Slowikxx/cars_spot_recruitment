@@ -18,8 +18,11 @@ const Gallery = () => {
 	const onGalleryButtonClick = (galleryButtonIndex: number) => {
 		const isMobileScreen = window.innerWidth < 768;
 		setButtonOnIndex(galleryButtonIndex);
+
 		setImageOffset(
-			isMobileScreen ? -468 * galleryButtonIndex : -664 * galleryButtonIndex
+			isMobileScreen
+				? (-window.innerWidth + 47.5) * galleryButtonIndex
+				: -664 * galleryButtonIndex
 		);
 	};
 
@@ -62,9 +65,9 @@ const Gallery = () => {
 					</p>
 				))}
 			</motion.div>
-			<div className="mt-20 mb-12 w-full overflow-x-hidden">
+			<div className="mt-20 mb-12 overflow-hidden">
 				<div
-					className="flex flex-row gap-16 transition-transform duration-300"
+					className="flex flex-row sm:gap-16 gap-0 transition-transform duration-300"
 					style={{ transform: `translateX(${Math.min(imageOffset, 0)}px)` }}
 				>
 					{carImages.map((car, i) => (
@@ -80,7 +83,7 @@ const Gallery = () => {
 							key={i}
 							src={car.src}
 							alt={car.alt}
-							className="w-full max-w-[600px] h-[446px] flex-shrink-0"
+							className="sm:w-[600px] w-full sm:h-[446px] h-[300px] flex-shrink-0"
 						/>
 					))}
 				</div>
