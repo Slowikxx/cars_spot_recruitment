@@ -3,3 +3,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	@apply overflow-x-hidden;
+}
+
+@layer components {
+	.navLinks {
+		@apply font-robotoFlex font-normal leading-6 text-gray-200 cursor-pointer hover:text-dark-blue hover:opacity-80;
+	}
+}

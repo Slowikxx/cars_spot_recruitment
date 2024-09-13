@@ -36,7 +36,7 @@ const Navigation = () => {
 						e.preventDefault();
 						window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
 					}}
-					className="font-robotoFlex font-normal leading-6 text-gray-200 cursor-pointer hover:text-dark-blue hover:opacity-80"
+					className="navLinks"
 				>
 					Galeria zdjęć
 				</a>
@@ -49,7 +49,7 @@ const Navigation = () => {
 							behavior: 'smooth',
 						});
 					}}
-					className="font-robotoFlex font-normal leading-6 text-gray-200 cursor-pointer hover:text-dark-blue hover:opacity-80"
+					className="navLinks"
 				>
 					FaQ
 				</a>
@@ -92,7 +92,7 @@ const Navigation = () => {
 										behavior: 'smooth',
 									});
 								}}
-								className="font-robotoFlex font-normal leading-6 text-gray-200 cursor-pointer text-2xl hover:text-dark-blue hover:opacity-80"
+								className="navLinks text-2xl"
 							>
 								Galeria zdjęć
 							</a>
@@ -108,7 +108,7 @@ const Navigation = () => {
 										behavior: 'smooth',
 									});
 								}}
-								className="font-robotoFlex font-normal leading-6 text-2xl text-gray-200 cursor-pointer hover:text-dark-blue hover:opacity-80"
+								className="navLinks text-2xl"
 							>
 								FaQ
 							</a>
